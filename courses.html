@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Courses & Clinical Masterclasses | IDDS</title>
+  <meta name="description" content="Explore live, interactive, CPD-accredited dental courses designed for practicing clinicians and dental surgeons.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top Sticky Navigation -->
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="index.html" class="brand-logo" aria-label="Institute of Digital Dental Sciences Home">
+        <div class="logo-symbol">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <path d="M12 2C8 2 6 5 6 8c0 4.5 2 7.5 3 13 0.5 2.5 1.5 2.5 3 0 1-5.5 3-8.5 3-13 0-3-2-6-6-6z"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-acronym">IDDS</span>
+          <span class="brand-name">Institute of Digital Dental Sciences</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" aria-label="Primary Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="courses.html" class="nav-link active">Courses</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="instructor.html" class="nav-link">Faculty</a>
+        <a href="index.html#accreditation" class="nav-link">Accreditation</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn btn-primary btn-sm" data-open-modal="enrollModal" data-course-name="Mastery in Fixed Prosthodontics">Enroll Now</button>
+        <button class="mobile-nav-toggle" aria-label="Toggle navigation menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-menu-drawer">
+    <div class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link">Home</a>
+      <a href="courses.html" class="mobile-nav-link">Courses Catalog</a>
+      <a href="course-details.html" class="mobile-nav-link">Fixed Prosthodontics Program</a>
+      <a href="about.html" class="mobile-nav-link">About IDDS</a>
+      <a href="instructor.html" class="mobile-nav-link">Faculty Profile</a>
+      <a href="contact.html" class="mobile-nav-link">Contact</a>
+    </div>
+  </div>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow eyebrow-gold">Academic Curriculum</span>
+      <h1 class="page-hero-title">Clinical Dental Programs</h1>
+      <p class="page-hero-desc">
+        Specialized, case-based masterclasses curated for practicing dental clinicians seeking predictable results, enhanced chairside confidence, and verifiable CPD hours.
+      </p>
+    </div>
+  </section>
+
+  <!-- Course Catalog & Filter Controls -->
+  <section style="padding: 70px 0 100px 0; background: #f8fafc;">
+    <div class="container">
+      
+      <!-- Category Filter Tabs -->
+      <div style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 10px; margin-bottom: 48px;">
+        <button class="btn btn-primary course-filter-btn active" data-filter="all">All Programs</button>
+        <button class="btn btn-secondary course-filter-btn" data-filter="prostho">Prosthodontics</button>
+        <button class="btn btn-secondary course-filter-btn" data-filter="digital">Digital Dentistry</button>
+        <button class="btn btn-secondary course-filter-btn" data-filter="surgery">Clinical Surgery & Extractions</button>
+      </div>
+
+      <!-- Course Cards Grid -->
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 32px;">
+        
+        <!-- CARD 1: Featured Mastery in Fixed Prosthodontics (Active Enrollment) -->
+        <div class="filterable-course-card fade-in-up" data-category="prostho all" style="background: #fff; border: 2px solid #0ea5b5; border-radius: 18px; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between; box-shadow: var(--shadow-lg); position: relative;">
+          <div style="position: absolute; top: 16px; left: 16px; z-index: 5;">
+            <span class="badge badge-teal badge-live-pulse">ENROLLING NOW</span>
+          </div>
+
+          <div style="position: relative; height: 230px; background: #0a1329;">
+            <img 
+              src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=700&q=80" 
+              alt="Mastery in Fixed Prosthodontics" 
+              style="width: 100%; height: 100%; object-fit: cover; opacity: 0.9;"
+            >
+          </div>
+
+          <div style="padding: 30px; display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+            <div>
+              <div class="badge-row" style="margin-bottom: 12px;">
+                <span class="badge badge-navy">4 LIVE SESSIONS</span>
+                <span class="badge badge-gold">CPD ACCREDITED #785270</span>
+              </div>
+              <h3 style="font-size: 1.45rem; font-weight: 800; color: #0a1329; margin-bottom: 6px;">
+                Mastery in Fixed Prosthodontics
+              </h3>
+              <p style="font-size: 0.9rem; font-weight: 700; color: #0ea5b5; margin-bottom: 12px;">
+                From Diagnosis to Delivery
+              </p>
+              <p style="font-size: 0.92rem; color: #475569; line-height: 1.6; margin-bottom: 20px;">
+                Master tooth preparation precision, long-span FPDs, material selection (Zirconia / Lithium Disilicate), impression taking, and cementation without debonds.
+              </p>
+
+              <div style="display: flex; flex-direction: column; gap: 8px; font-size: 0.86rem; color: #64748b; margin-bottom: 24px; padding-top: 14px; border-top: 1px solid #f1f5f9;">
+                <div><strong>Instructor:</strong> Prof. Masooma Aslam (Gold Medalist)</div>
+                <div><strong>Platform:</strong> Interactive Zoom Live Room</div>
+              </div>
+            </div>
+
+            <div style="padding-top: 20px; border-top: 1px solid #e2e8f0; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 14px;">
+              <div>
+                <span style="font-size: 1.65rem; font-weight: 800; color: #0a1329;">PKR 5,000</span>
+                <span style="font-size: 0.8rem; color: #64748b; display: block;">≈ $18 USD</span>
+              </div>
+              <div style="display: flex; gap: 8px;">
+                <a href="course-details.html" class="btn btn-secondary btn-sm">Details</a>
+                <button class="btn btn-teal btn-sm" data-open-modal="enrollModal" data-course-name="Mastery in Fixed Prosthodontics">Enroll</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 2: Digital Dentistry & Intraoral Scanning -->
+        <div class="filterable-course-card fade-in-up" data-category="digital all" style="background: #fff; border: 1px solid #e2e8f0; border-radius: 18px; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between; box-shadow: var(--shadow-sm); position: relative;">
+          <div style="position: absolute; top: 16px; left: 16px; z-index: 5;">
+            <span class="badge badge-navy">UPCOMING COHORT</span>
+          </div>
+
+          <div style="position: relative; height: 230px; background: #0a1329;">
+            <img 
+              src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=700&q=80" 
+              alt="Digital Dentistry Intraoral Scanning" 
+              style="width: 100%; height: 100%; object-fit: cover; opacity: 0.9;"
+            >
+          </div>
+
+          <div style="padding: 30px; display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+            <div>
+              <div class="badge-row" style="margin-bottom: 12px;">
+                <span class="badge badge-outline">DIGITAL WORKFLOW</span>
+                <span class="badge badge-gold">CPD RECOGNIZED</span>
+              </div>
+              <h3 style="font-size: 1.45rem; font-weight: 800; color: #0a1329; margin-bottom: 6px;">
+                Digital Intraoral Scanning & CAD/CAM
+              </h3>
+              <p style="font-size: 0.9rem; font-weight: 700; color: #0ea5b5; margin-bottom: 12px;">
+                Virtual Margin Lines to Chairside Milling
+              </p>
+              <p style="font-size: 0.92rem; color: #475569; line-height: 1.6; margin-bottom: 20px;">
+                Transition smoothly into digital impressions, optical scanning paths, mesh analysis, and STL/PLY file transfer to commercial milling centers.
+              </p>
+
+              <div style="display: flex; flex-direction: column; gap: 8px; font-size: 0.86rem; color: #64748b; margin-bottom: 24px; padding-top: 14px; border-top: 1px solid #f1f5f9;">
+                <div><strong>Format:</strong> 3 Live Interactive Sessions</div>
+                <div><strong>Prerequisite:</strong> Basic Restorative Experience</div>
+              </div>
+            </div>
+
+            <div style="padding-top: 20px; border-top: 1px solid #e2e8f0; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 14px;">
+              <div>
+                <span style="font-size: 1.4rem; font-weight: 800; color: #0a1329;">Registration Soon</span>
+                <span style="font-size: 0.8rem; color: #64748b; display: block;">Early waitlist open</span>
+              </div>
+              <button class="btn btn-secondary btn-sm" data-open-modal="enrollModal" data-course-name="Digital Scanning Waitlist">Waitlist</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 3: Advanced Tooth Extraction Techniques -->
+        <div class="filterable-course-card fade-in-up" data-category="surgery all" style="background: #fff; border: 1px solid #e2e8f0; border-radius: 18px; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between; box-shadow: var(--shadow-sm); position: relative;">
+          <div style="position: absolute; top: 16px; left: 16px; z-index: 5;">
+            <span class="badge badge-navy">UPCOMING COHORT</span>
+          </div>
+
+          <div style="position: relative; height: 230px; background: #0a1329;">
+            <img 
+              src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=700&q=80" 
+              alt="Atraumatic extraction instruments" 
+              style="width: 100%; height: 100%; object-fit: cover; opacity: 0.9;"
+            >
+          </div>
+
+          <div style="padding: 30px; display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+            <div>
+              <div class="badge-row" style="margin-bottom: 12px;">
+                <span class="badge badge-outline">CLINICAL SURGERY</span>
+                <span class="badge badge-gold">CPD ACCREDITED</span>
+              </div>
+              <h3 style="font-size: 1.45rem; font-weight: 800; color: #0a1329; margin-bottom: 6px;">
+                Advanced Extraction & Socket Preservation
+              </h3>
+              <p style="font-size: 0.9rem; font-weight: 700; color: #0ea5b5; margin-bottom: 12px;">
+                Atraumatic Protocols & Ridge Maintenance
+              </p>
+              <p style="font-size: 0.92rem; color: #475569; line-height: 1.6; margin-bottom: 20px;">
+                Sectioning techniques, periotome and luxator dynamics, root tip retrieval, and socket grafting protocols derived from international surgical criteria.
+              </p>
+
+              <div style="display: flex; flex-direction: column; gap: 8px; font-size: 0.86rem; color: #64748b; margin-bottom: 24px; padding-top: 14px; border-top: 1px solid #f1f5f9;">
+                <div><strong>Instructor:</strong> Prof. Masooma Aslam & Surgical Guests</div>
+                <div><strong>Certification:</strong> CPD Verified Hours</div>
+              </div>
+            </div>
+
+            <div style="padding-top: 20px; border-top: 1px solid #e2e8f0; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 14px;">
+              <div>
+                <span style="font-size: 1.4rem; font-weight: 800; color: #0a1329;">Registration Soon</span>
+                <span style="font-size: 0.8rem; color: #64748b; display: block;">Notification list</span>
+              </div>
+              <button class="btn btn-secondary btn-sm" data-open-modal="enrollModal" data-course-name="Extraction Masterclass Waitlist">Waitlist</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Institutional Assurance Banner -->
+      <div style="margin-top: 70px; background: #fff; border-radius: 18px; border: 1px solid #e2e8f0; padding: 40px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 24px;">
+        <div style="max-width: 680px;">
+          <h3 style="font-size: 1.4rem; font-weight: 800; color: #0a1329; margin-bottom: 8px;">Need Custom Group Training for Your Clinic or Hospital Department?</h3>
+          <p style="font-size: 0.95rem; color: #64748b;">
+            IDDS facilitates specialized virtual masterclasses tailored for dental hospital house officers, residency programs, and private clinic associates.
+          </p>
+        </div>
+        <a href="contact.html" class="btn btn-primary">Request Departmental Inquiry</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="brand-logo" style="margin-bottom: 12px;">
+            <div class="logo-symbol">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <path d="M12 2C8 2 6 5 6 8c0 4.5 2 7.5 3 13 0.5 2.5 1.5 2.5 3 0 1-5.5 3-8.5 3-13 0-3-2-6-6-6z"/>
+              </svg>
+            </div>
+            <div class="brand-text">
+              <span class="brand-acronym">IDDS</span>
+              <span class="brand-name">Institute of Digital Dental Sciences</span>
+            </div>
+          </div>
+          <p class="footer-tagline">Excellence in Digital Dental Education. Upgrading clinical practice worldwide.</p>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="courses.html" class="footer-link">Courses</a></li>
+            <li><a href="about.html" class="footer-link">About</a></li>
+            <li><a href="instructor.html" class="footer-link">Faculty</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Accreditation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html#accreditation" class="footer-link">CPD Group UK #785270</a></li>
+            <li><a href="index.html#faq" class="footer-link">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Contact</h4>
+          <div class="footer-contact-list">
+            <div class="footer-contact-item">WhatsApp: +92 300 0000000</div>
+            <div class="footer-contact-item">admissions@idds-dental.edu.pk</div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>© 2026 Institute of Digital Dental Sciences. All rights reserved.</div>
+        <div class="footer-demo-notice">Courses Catalog Demo • HS Web Studio</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Enrollment Modal -->
+  <div class="modal-overlay" id="enrollModal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-card">
+      <button class="modal-close-btn" data-close-modal aria-label="Close modal">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <line x1="18" y1="6" x2="6" y2="18"/>
+          <line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+
+      <div style="margin-bottom: 24px;">
+        <span class="badge badge-teal" style="margin-bottom: 10px;">IDDS ADMISSIONS</span>
+        <h3 style="font-size: 1.6rem; font-weight: 800; color: #0a1329;">Course Registration & Inquiry</h3>
+        <p style="font-size: 0.9rem; color: #64748b;">
+          Reserve your place or register your interest for upcoming batches.
+        </p>
+      </div>
+
+      <form data-demo-form="true">
+        <div class="form-group">
+          <label class="form-label" for="enrollCourseName">Program Name</label>
+          <input type="text" id="enrollCourseName" class="form-control" value="Mastery in Fixed Prosthodontics" readonly style="font-weight: 700; background: #e2e8f0;">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="catDocName">Full Name *</label>
+          <input type="text" id="catDocName" class="form-control" placeholder="Dr. Full Name" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="catDocEmail">Email Address *</label>
+          <input type="email" id="catDocEmail" class="form-control" placeholder="doctor@clinic.com" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="catDocPhone">WhatsApp / Mobile *</label>
+          <input type="tel" id="catDocPhone" class="form-control" placeholder="+92 300 1234567" required>
+        </div>
+
+        <button type="submit" class="btn btn-teal btn-lg" style="width: 100%;">
+          Submit Inquiry
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

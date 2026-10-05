@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact IDDS | Admissions & Course Inquiries</title>
+  <meta name="description" content="Get in touch with the Institute of Digital Dental Sciences (IDDS) admissions and academic team via WhatsApp, email, or online inquiry.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top Sticky Header -->
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="index.html" class="brand-logo" aria-label="Institute of Digital Dental Sciences Home">
+        <div class="logo-symbol">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <path d="M12 2C8 2 6 5 6 8c0 4.5 2 7.5 3 13 0.5 2.5 1.5 2.5 3 0 1-5.5 3-8.5 3-13 0-3-2-6-6-6z"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-acronym">IDDS</span>
+          <span class="brand-name">Institute of Digital Dental Sciences</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" aria-label="Primary Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="courses.html" class="nav-link">Courses</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="instructor.html" class="nav-link">Faculty</a>
+        <a href="index.html#accreditation" class="nav-link">Accreditation</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="courses.html" class="btn btn-secondary btn-sm">Explore Courses</a>
+        <button class="btn btn-primary btn-sm" data-open-modal="enrollModal" data-course-name="Mastery in Fixed Prosthodontics">Enroll Now</button>
+        <button class="mobile-nav-toggle" aria-label="Toggle navigation menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-menu-drawer">
+    <div class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link">Home</a>
+      <a href="courses.html" class="mobile-nav-link">Courses Catalog</a>
+      <a href="course-details.html" class="mobile-nav-link">Fixed Prosthodontics Program</a>
+      <a href="about.html" class="mobile-nav-link">About IDDS</a>
+      <a href="instructor.html" class="mobile-nav-link">Faculty Profile</a>
+      <a href="contact.html" class="mobile-nav-link">Contact</a>
+    </div>
+  </div>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow eyebrow-gold">Admissions & Inquiries</span>
+      <h1 class="page-hero-title">Have Questions About a Course?</h1>
+      <p class="page-hero-desc">
+        Our admissions coordinators and clinical liaison team are here to assist with curriculum details, batch timings, group enrollments, and international payment options.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact Form & Info Grid -->
+  <section style="background: #f8fafc; padding: 70px 0 100px 0;">
+    <div class="container">
+      <div class="contact-grid">
+        
+        <!-- Inquiry Form -->
+        <div class="contact-card">
+          <span class="eyebrow">Direct Academic Inquiry</span>
+          <h2 style="font-size: 1.85rem; font-weight: 800; color: #0a1329; margin-bottom: 8px;">
+            Send an Inquiry to IDDS
+          </h2>
+          <p style="font-size: 0.95rem; color: #64748b; margin-bottom: 28px;">
+            Submit your inquiry below. Our team typically responds within a few hours on business days.
+          </p>
+
+          <form data-demo-form="true">
+            <div class="form-group">
+              <label class="form-label" for="contactName">Doctor's Full Name *</label>
+              <input type="text" id="contactName" class="form-control" placeholder="Dr. Full Name" required>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+              <div class="form-group">
+                <label class="form-label" for="contactEmail">Email Address *</label>
+                <input type="email" id="contactEmail" class="form-control" placeholder="doctor@clinic.com" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="contactPhone">Phone / WhatsApp *</label>
+                <input type="tel" id="contactPhone" class="form-control" placeholder="+92 300 1234567" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contactCourse">Interested Course</label>
+              <select id="contactCourse" class="form-control">
+                <option value="prostho">Mastery in Fixed Prosthodontics (PKR 5,000 / $18)</option>
+                <option value="digital">Digital Intraoral Scanning & CAD/CAM</option>
+                <option value="surgery">Advanced Extraction & Socket Preservation</option>
+                <option value="custom">Custom Hospital / Group Training</option>
+                <option value="general">General Institutional Question</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contactMessage">Message or Specific Question *</label>
+              <textarea id="contactMessage" class="form-control" placeholder="Please specify your question regarding schedule, session recordings, or payment methods..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-teal btn-lg" style="width: 100%;">
+              Send Inquiry
+            </button>
+          </form>
+        </div>
+
+        <!-- Contact Channels & Information -->
+        <div class="contact-info-block">
+          
+          <!-- Channel 1: WhatsApp Us (Prominent) -->
+          <!-- 
+            PLACEHOLDER WHATSAPP NUMBER:
+            Replace '923000000000' with the official IDDS WhatsApp number in production.
+          -->
+          <div class="contact-info-card" style="border: 2px solid #25d366; background: #fff;">
+            <div class="contact-icon-large" style="background: #25d366; color: #fff;">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/>
+              </svg>
+            </div>
+            <div>
+              <span class="badge badge-outline" style="margin-bottom: 6px; color: #16a34a; border-color: #bbf7d0;">FASTEST RESPONSE</span>
+              <h3 style="font-size: 1.25rem; font-weight: 800; color: #0a1329; margin-bottom: 4px;">WhatsApp Us</h3>
+              <p style="font-size: 0.92rem; color: #475569; margin-bottom: 12px;">
+                Chat directly with IDDS course admissions for instant registration assistance and batch confirmation.
+              </p>
+              <a href="https://wa.me/923000000000?text=Hello%20IDDS!%20I%20have%20an%20inquiry%20regarding%20your%20dental%20education%20courses." 
+                 target="_blank" 
+                 rel="noopener" 
+                 class="btn btn-whatsapp btn-sm">
+                Chat on WhatsApp (+92 300 0000000)
+              </a>
+            </div>
+          </div>
+
+          <!-- Channel 2: Email Us -->
+          <div class="contact-info-card">
+            <div class="contact-icon-large">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+            </div>
+            <div>
+              <h3 style="font-size: 1.25rem; font-weight: 800; color: #0a1329; margin-bottom: 4px;">Email Us</h3>
+              <p style="font-size: 0.92rem; color: #475569; margin-bottom: 6px;">
+                For institutional partnerships, residency group access, and certificate verification:
+              </p>
+              <!-- PLACEHOLDER EMAIL: Replace with official address in production -->
+              <a href="mailto:admissions@idds-dental.edu.pk" style="font-size: 1.05rem; font-weight: 700; color: #0ea5b5;">
+                admissions@idds-dental.edu.pk
+              </a>
+            </div>
+          </div>
+
+          <!-- Channel 3: Follow IDDS -->
+          <div class="contact-info-card">
+            <div class="contact-icon-large">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <line x1="2" y1="12" x2="22" y2="12"/>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+              </svg>
+            </div>
+            <div>
+              <h3 style="font-size: 1.25rem; font-weight: 800; color: #0a1329; margin-bottom: 4px;">Follow IDDS</h3>
+              <p style="font-size: 0.92rem; color: #475569; margin-bottom: 12px;">
+                Stay updated on weekly clinical case pearls, new masterclasses, and live cohort schedules.
+              </p>
+              <div style="display: flex; gap: 10px;">
+                <a href="https://facebook.com" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Facebook</a>
+                <a href="https://instagram.com" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Instagram</a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">LinkedIn</a>
+                <a href="https://youtube.com" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">YouTube</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- CPD Verification Notice -->
+          <div style="background: rgba(245,158,11,0.1); border: 1px solid rgba(245,158,11,0.3); border-radius: 14px; padding: 22px; display: flex; align-items: center; gap: 14px;">
+            <div style="width: 38px; height: 38px; border-radius: 8px; background: #d97706; color: #fff; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+              </svg>
+            </div>
+            <div style="font-size: 0.88rem; color: #92400e; line-height: 1.45;">
+              <strong>Accreditation Inquiries:</strong> IDDS certificates can be verified through The CPD Group under institution license #785270.
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="brand-logo" style="margin-bottom: 12px;">
+            <div class="logo-symbol">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <path d="M12 2C8 2 6 5 6 8c0 4.5 2 7.5 3 13 0.5 2.5 1.5 2.5 3 0 1-5.5 3-8.5 3-13 0-3-2-6-6-6z"/>
+              </svg>
+            </div>
+            <div class="brand-text">
+              <span class="brand-acronym">IDDS</span>
+              <span class="brand-name">Institute of Digital Dental Sciences</span>
+            </div>
+          </div>
+          <p class="footer-tagline">Excellence in Digital Dental Education. Upgrading clinical practice worldwide.</p>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="courses.html" class="footer-link">Courses Catalog</a></li>
+            <li><a href="about.html" class="footer-link">About IDDS</a></li>
+            <li><a href="instructor.html" class="footer-link">Faculty</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Accreditation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html#accreditation" class="footer-link">CPD Group UK #785270</a></li>
+            <li><a href="index.html#faq" class="footer-link">Course FAQs</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Contact</h4>
+          <div class="footer-contact-list">
+            <div class="footer-contact-item">WhatsApp: +92 300 0000000</div>
+            <div class="footer-contact-item">admissions@idds-dental.edu.pk</div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>© 2026 Institute of Digital Dental Sciences. All rights reserved.</div>
+        <div class="footer-demo-notice">Contact Page Demo • HS Web Studio</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Enrollment Modal -->
+  <div class="modal-overlay" id="enrollModal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-card">
+      <button class="modal-close-btn" data-close-modal aria-label="Close modal">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <line x1="18" y1="6" x2="6" y2="18"/>
+          <line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+
+      <div style="margin-bottom: 24px;">
+        <span class="badge badge-teal" style="margin-bottom: 10px;">SEAT RESERVATION</span>
+        <h3 style="font-size: 1.6rem; font-weight: 800; color: #0a1329;">Enroll in IDDS Masterclass</h3>
+        <p style="font-size: 0.9rem; color: #64748b;">
+          Mastery in Fixed Prosthodontics (PKR 5,000 / $18)
+        </p>
+      </div>
+
+      <form data-demo-form="true">
+        <div class="form-group">
+          <label class="form-label" for="cModalName">Doctor's Full Name *</label>
+          <input type="text" id="cModalName" class="form-control" placeholder="Dr. Full Name" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="cModalEmail">Email Address *</label>
+          <input type="email" id="cModalEmail" class="form-control" placeholder="doctor@clinic.com" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="cModalPhone">WhatsApp Number *</label>
+          <input type="tel" id="cModalPhone" class="form-control" placeholder="+92 300 1234567" required>
+        </div>
+
+        <button type="submit" class="btn btn-teal btn-lg" style="width: 100%;">
+          Submit Reservation
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
